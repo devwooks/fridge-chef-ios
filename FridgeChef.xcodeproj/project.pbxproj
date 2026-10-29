@@ -6,6 +6,10 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FE97EB7F309320CD008930E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE97EB7E309320CD008930E0 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		FE97EB6430931FFD008930E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		FE97EB5630931FFD008930E0 /* FridgeChef.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeChef.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB6330931FFD008930E0 /* FridgeChefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB6D30931FFD008930E0 /* FridgeChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE97EB7E309320CD008930E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -72,6 +77,7 @@
 				FE97EB5830931FFD008930E0 /* FridgeChef */,
 				FE97EB6630931FFD008930E0 /* FridgeChefTests */,
 				FE97EB7030931FFD008930E0 /* FridgeChefUITests */,
+				FE97EB7E309320CD008930E0 /* README.md */,
 				FE97EB5730931FFD008930E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 		FE97EB5430931FFD008930E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				FE97EB7F309320CD008930E0 /* README.md in Resources */,
 			);
 		};
 		FE97EB6130931FFD008930E0 /* Resources */ = {
