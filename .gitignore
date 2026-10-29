@@ -1,0 +1,26 @@
+# ===== macOS =====
+.DS_Store
+
+# ===== Xcode 개인 설정 =====
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# ===== 빌드 결과물 =====
+build/
+DerivedData/
+
+# ===== 배포 / 디버그 파일 =====
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.hmap
+
+# ===== Swift Package Manager =====
+.build/
+.swiftpm/
+
+# ===== API 키 (절대 올리면 안 됨) =====
+Secrets.xcconfig
+*.env
