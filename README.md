@@ -17,4 +17,4 @@ FridgeChef(Root)
 ```
 ---
 ### System Architecture
-<img src="" width="100px" height="50px" title="System Architecture"/>
+<img src="FridgeChef_System_Architecture.png" width="1000" height="600px" title="System Architecture"/>
