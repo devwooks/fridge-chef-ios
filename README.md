@@ -1,5 +1,5 @@
 # FridgeChef Project
----
+
 ### Project Description
 
 #### This project is an iOS application that searches for cookable dishes and recommends recipes based on the ingredients a user has added to their refrigerator.
@@ -14,4 +14,7 @@ FridgeChef(Root)
 ├───FridgeChefTests (단위 테스트)  
 ├───FridgeChefUITests (UI 테스트)
 └───README.md
-
+```
+---
+### System Architecture
+<img src="" width="100px" height="50px" title="System Architecture"/>
