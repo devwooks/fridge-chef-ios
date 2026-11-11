@@ -1,8 +1,21 @@
-# FridgeChef Project
+# FridgeChef Project 
 
 ### Project Description
 
 #### This project is an iOS application that searches for cookable dishes and recommends recipes based on the ingredients a user has added to their refrigerator.
+
+---
+### Develop Environment
+![Static Badge](https://img.shields.io/badge/-Xcode-%23147EFB?style=for-the-badge&logo=xcode&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-Supabase-black?style=for-the-badge&logo=supabase&logoColor=%233FCF8E)
+![Static Badge](https://img.shields.io/badge/-Swift-%23F05138?style=for-the-badge&logo=swift&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-FastAPI-%23009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-Python-%233776AB?style=for-the-badge&logo=python&logoColor=white)
+<br>
+### Tools & Agent
+![Static Badge](https://img.shields.io/badge/-Claude-%23D97757?style=for-the-badge&logo=claude&logoColor=white)
+![Static Badge](https://img.shields.io/badge/-Notion-black?style=for-the-badge&logo=notion&logoColor=white)
+
 ---
 ### Directory Structure
 ```
@@ -41,7 +54,3 @@ FridgeChef(Root)
 |recipe_ingredients|Select for anyone|SELECT|Anon, Authenticated|true|X|
 recipe_steps|Select for anyone|SELECT|Anon, Authenticated|true|X|
 recipe_videos|Select for anyone|SELECT|Anon, Authenticated|true|X|
-
-__(select auth.uid() = id)를 통해 타인에 의해 데이터가 수정되지 않도록 제한__<br>
-__USING과 WITH CHECK는 이미 있는 행에 대한 접근과 새로 쓰려는 행에 대한 검증에 해당__<br>
-__profiles 테이블에 INSERT와 DELETE는 가입 트리거로 관리자가 튜플을 생성하고 회원탈퇴 시 FK의 CASCADE 정책에 의해 지워지기 때문에 필요 없음__<br>
