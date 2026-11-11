@@ -14,7 +14,7 @@
 <br>
 ### Tools & Agent
 ![Static Badge](https://img.shields.io/badge/-Claude-%23D97757?style=for-the-badge&logo=claude&logoColor=white)
-![Static Badge](https://img.shields.io/badge/-Notion-black?style=for-the-badge&logo=notion&logoColor=white)
+[![Static Badge](https://img.shields.io/badge/-Notion-black?style=for-the-badge&logo=notion&logoColor=white)](https://app.notion.com/p/FridgeChef-40f91bbc9bb0802b8631dba8763973c4?source=copy_link)
 
 ---
 ### Directory Structure
