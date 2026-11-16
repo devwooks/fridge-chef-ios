@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE33C23330A4528D00454B33 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = FE33C23230A4528D00454B33 /* Supabase */; };
 		FE97EB7F309320CD008930E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE97EB7E309320CD008930E0 /* README.md */; };
+		FEC9593230AAE1F20051C87B /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC9593130AAE1F00051C87B /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,7 @@
 		FE97EB6330931FFD008930E0 /* FridgeChefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB6D30931FFD008930E0 /* FridgeChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB7E309320CD008930E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FEC9593130AAE1F00051C87B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -56,6 +59,7 @@
 		FE97EB5330931FFD008930E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				FE33C23330A4528D00454B33 /* Supabase in Frameworks */,
 			);
 		};
 		FE97EB6030931FFD008930E0 /* Frameworks */ = {
@@ -74,6 +78,7 @@
 		FE97EB4D30931FFD008930E0 = {
 			isa = PBXGroup;
 			children = (
+				FEC9593130AAE1F00051C87B /* Secrets.xcconfig */,
 				FE97EB5830931FFD008930E0 /* FridgeChef */,
 				FE97EB6630931FFD008930E0 /* FridgeChefTests */,
 				FE97EB7030931FFD008930E0 /* FridgeChefUITests */,
@@ -109,6 +114,9 @@
 				FE97EB5830931FFD008930E0 /* FridgeChef */,
 			);
 			name = FridgeChef;
+			packageProductDependencies = (
+				FE33C23230A4528D00454B33 /* Supabase */,
+			);
 			productName = FridgeChef;
 			productReference = FE97EB5630931FFD008930E0 /* FridgeChef.app */;
 			productType = "com.apple.product-type.application";
@@ -163,7 +171,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2710;
-				LastUpgradeCheck = 2710;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					FE97EB5530931FFD008930E0 = {
 						CreatedOnToolsVersion = 27.1;
@@ -187,6 +195,9 @@
 			);
 			mainGroup = FE97EB4D30931FFD008930E0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE97EB5730931FFD008930E0 /* Products */;
 			projectDirPath = "";
@@ -203,6 +214,7 @@
 		FE97EB5430931FFD008930E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				FEC9593230AAE1F20051C87B /* Secrets.xcconfig in Resources */,
 				FE97EB7F309320CD008930E0 /* README.md in Resources */,
 			);
 		};
@@ -309,6 +321,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -366,6 +379,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -557,6 +571,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE33C23230A4528D00454B33 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE97EB4E30931FFD008930E0 /* Project object */;
 	validationLevel = 1;
