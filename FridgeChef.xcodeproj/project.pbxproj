@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FE33C23330A4528D00454B33 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = FE33C23230A4528D00454B33 /* Supabase */; };
 		FE97EB7F309320CD008930E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE97EB7E309320CD008930E0 /* README.md */; };
-		FEC9593230AAE1F20051C87B /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC9593130AAE1F00051C87B /* Secrets.xcconfig */; };
+		FEC9593430AAE2EB0051C87B /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,25 @@
 		FE97EB6330931FFD008930E0 /* FridgeChefTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB6D30931FFD008930E0 /* FridgeChefUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeChefUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE97EB7E309320CD008930E0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		FEC9593130AAE1F00051C87B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FEC9593630AAE45B0051C87B /* Exceptions for "FridgeChef" folder in "FridgeChef" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FE97EB5530931FFD008930E0 /* FridgeChef */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FE97EB5830931FFD008930E0 /* FridgeChef */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FEC9593630AAE45B0051C87B /* Exceptions for "FridgeChef" folder in "FridgeChef" target */,
+			);
 			path = FridgeChef;
 			sourceTree = "<group>";
 		};
@@ -78,7 +91,7 @@
 		FE97EB4D30931FFD008930E0 = {
 			isa = PBXGroup;
 			children = (
-				FEC9593130AAE1F00051C87B /* Secrets.xcconfig */,
+				FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */,
 				FE97EB5830931FFD008930E0 /* FridgeChef */,
 				FE97EB6630931FFD008930E0 /* FridgeChefTests */,
 				FE97EB7030931FFD008930E0 /* FridgeChefUITests */,
@@ -214,8 +227,8 @@
 		FE97EB5430931FFD008930E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				FEC9593230AAE1F20051C87B /* Secrets.xcconfig in Resources */,
 				FE97EB7F309320CD008930E0 /* README.md in Resources */,
+				FEC9593430AAE2EB0051C87B /* Secrets.xcconfig in Resources */,
 			);
 		};
 		FE97EB6130931FFD008930E0 /* Resources */ = {
@@ -387,6 +400,7 @@
 		};
 		FE97EB7630931FFD008930E0 /* Debug configuration for PBXNativeTarget "FridgeChef" */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -395,6 +409,7 @@
 				DEVELOPMENT_TEAM = 7U86WHJUGQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeChef/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,6 +435,7 @@
 		};
 		FE97EB7730931FFD008930E0 /* Release configuration for PBXNativeTarget "FridgeChef" */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,6 +444,7 @@
 				DEVELOPMENT_TEAM = 7U86WHJUGQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FridgeChef/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
