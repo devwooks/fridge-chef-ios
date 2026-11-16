@@ -7,7 +7,7 @@
 ---
 ### Develop Environment
 ![Static Badge](https://img.shields.io/badge/-Xcode-%23147EFB?style=for-the-badge&logo=xcode&logoColor=white)
-![Static Badge](https://img.shields.io/badge/-Supabase-black?style=for-the-badge&logo=supabase&logoColor=%233FCF8E)
+![Static Badge](https://img.shields.io/badge/Supbase-%233FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/-Swift-%23F05138?style=for-the-badge&logo=swift&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/-FastAPI-%23009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Static Badge](https://img.shields.io/badge/-Python-%233776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -15,6 +15,8 @@
 ### Tools & Agent
 ![Static Badge](https://img.shields.io/badge/-Claude-%23D97757?style=for-the-badge&logo=claude&logoColor=white)
 [![Static Badge](https://img.shields.io/badge/-Notion-black?style=for-the-badge&logo=notion&logoColor=white)](https://app.notion.com/p/FridgeChef-40f91bbc9bb0802b8631dba8763973c4?source=copy_link)
+![Static Badge](https://img.shields.io/badge/Git-%23F03C2E?style=for-the-badge&logo=git&logoColor=white)
+
 
 ---
 ### Directory Structure
