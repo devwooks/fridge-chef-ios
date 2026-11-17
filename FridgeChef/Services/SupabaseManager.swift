@@ -6,11 +6,11 @@ enum SupabaseConfig {        // enum은 객체를 생성할 수 없어 상수 �
     static let url : URL = { // 객체 생성 없이 상수 선언 let (변화 X), {}()는 {내부 코드}를 한번만 실행하고 이후 결과를 저장
         guard                // let host, !host.isEmpty, let url 3가지가 모두 실행되도록 통제 (모두 수행해야 함)
             let host = Bundle.main.object(forInfoDictionaryKey: "SUPABASE_HOST") as? String,
-                            // Bundle.main.object()로 해당 앱의 Info.plist에서 SUPABASE_HOST값을 거내 String으로 변환하여 host 상수로 저장
+                            // Bundle.main.object()로 해당 앱의 Info.plist에서 SUPABASE_HOST값을 꺼내 String으로 변환하여 host 상수로 저장
             !host.isEmpty,  // host 값이 비어있지 않은지 확인
             let url = URL(string: "https://\(host)")
         else{
-            fatalError("SUPABASE_HOST가 없습니다. Secret.xcconfig와 Info.plist를 확인하세요.")
+            fatalError("SUPABASE_HOST가 없습니다. Secrets.xcconfig와 Info.plist를 확인하세요.")
         }
         return url
     }()
@@ -20,7 +20,7 @@ enum SupabaseConfig {        // enum은 객체를 생성할 수 없어 상수 �
             let key = Bundle.main.object(forInfoDictionaryKey: "SUPABASE_KEY") as? String,
             !key.isEmpty
         else {
-            fatalError("SUPABASE_KEY가 없습니다. Secret.xcconfig와 Info.plist를 확인하세요.")
+            fatalError("SUPABASE_KEY가 없습니다. Secrets.xcconfig와 Info.plist를 확인하세요.")
         }
         return key
     }()
