@@ -4,7 +4,7 @@ import Foundation
 import Supabase
 
 @Observable // SessionStore의 속성이 변하면 이 속성을 사용하는 화면이 재구성되도록 하기 위함
-final class SessionStore { // 객체로 구현하여 복사되지 않음 -> 모든 화면에서 같은 로그인 상태를 봐야하기 때문에 class로 구현 (call by reference)
+final class SessionStore { // class는 참조 타입 -> 여러 화면에 전달해도 복사되지 않고 같은 객체를 공유
     
     // 로그인 상태 4가지
     enum State {
@@ -65,15 +65,15 @@ final class SessionStore { // 객체로 구현하여 복사되지 않음 -> 모�
     // MARK: - 화면에서 호출하는 동작
     
     // 로그인 없이 둘러보기
-    private func continueAsGuest() {
+    func continueAsGuest() {
         state = .guest
     }
     // 둘러보기 중 로그인하러 초기 화면으로 돌아가기
-    private func goToWelcome() {
+    func goToWelcome() {
         state = .signedOut
     }
     // 개발용 익명 로그인 (소셜 로그인 연결 전 테스트용)
-    func signInAnonymousForTesting() async throws {
+    func signInAnonymouslyForTesting() async throws {
         try await supabase.auth.signInAnonymously()
         // 성공하면 authStateChanges가 .signedIn을 알려 주어 state가 바뀜
     }
