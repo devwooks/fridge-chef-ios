@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FE33C23330A4528D00454B33 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = FE33C23230A4528D00454B33 /* Supabase */; };
 		FE97EB7F309320CD008930E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE97EB7E309320CD008930E0 /* README.md */; };
-		FEC9593430AAE2EB0051C87B /* Secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FEC9593330AAE2EB0051C87B /* Secrets.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				FE97EB7F309320CD008930E0 /* README.md in Resources */,
-				FEC9593430AAE2EB0051C87B /* Secrets.xcconfig in Resources */,
 			);
 		};
 		FE97EB6130931FFD008930E0 /* Resources */ = {
