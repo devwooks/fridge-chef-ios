@@ -1,7 +1,7 @@
 # FridgeChef Project 
 
 ### Project Description
-
+#### 사용자가 추가한 재료들을 기반으로 가능한 요리를 검색하고 레시피를 추천해주는 IOS 애플리케이션 제작 프로젝트입니다.
 #### This project is an iOS application that searches for cookable dishes and recommends recipes based on the ingredients a user has added to their refrigerator.
 
 ---
@@ -30,6 +30,7 @@ FridgeChef(Root)
 ├───FridgeChefUITests (UI 테스트)
 ├───FridgeChef_ERD.png (ERD 다이어그램)
 ├───FridgeChef_System_architecture.png (시스템 구성도)
+├───Secrets.xcconfig(Project URL, Public Key, etc..)
 └───README.md
 ```
 ---
