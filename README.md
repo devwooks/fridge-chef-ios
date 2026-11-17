@@ -25,6 +25,7 @@ FridgeChef(Root)
 ├───FridgeChef (실제 코드 파일)
 │   ├───Views
 │   ├───Stores
+│   │   └───SessionStore.swift(사용자의 로그인 상태 저장)
 │   ├───Services
 │   │   └───SupabaseManager.swift (Supabase 객체 생성)   
 │   ├───FridgeChefApp.swift (앱 시작점 == main)
