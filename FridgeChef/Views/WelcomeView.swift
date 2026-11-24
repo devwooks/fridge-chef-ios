@@ -45,7 +45,7 @@ struct WelcomeView: View {
 
                 // 로그인 버튼 → 로그인 화면으로 이동
                 NavigationLink {    // NavigationLink {A} label: {B} = B 누르면 A로 이동
-                    Text("로그인 화면 (E-3단계에서 LoginView로 교체)")  // 임시
+                    LoginView()  // 임시
                 } label: {
                     Text("로그인")
                         .frame(maxWidth: .infinity)             // 버튼 좌우 공백 최대
