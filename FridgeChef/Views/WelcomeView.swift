@@ -64,14 +64,14 @@ struct WelcomeView: View {
     }
 }
 
-/// 기능 설명 한 줄 (이 파일에서만 쓰는 부품 -> Views/Component/로 옮겨 다른 화면에서도 가져다 쓸 수 있음) 현재는 Private
+/// 기능 설명 한 줄 (이 파일에서만 쓰는 부품 -> Views/Components/로 옮겨 다른 화면에서도 가져다 쓸 수 있음) 현재는 Private
 private struct FeatureRow: View {
     let icon: String
     let color: Color
     let title: String
     let detail: String
 
-    var body: some View {   // HStack으로 아이콘 정렬, VStack으로 title, detail 정려
+    var body: some View {   // HStack으로 아이콘 정렬, VStack으로 title, detail 정렬
         HStack(alignment: .top, spacing: 12) {
             Image(systemName: icon)
                 .font(.title2)
