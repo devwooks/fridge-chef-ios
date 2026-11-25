@@ -32,6 +32,7 @@ FridgeChef(Root)
 │   ├───Stores
 │   │   └───SessionStore.swift(사용자의 로그인 상태 저장)
 │   ├───Services
+│   │   └───GoogleSignInService.swift(구글 로그인 서비스)
 │   │   └───SupabaseManager.swift (Supabase 객체 생성)   
 │   ├───FridgeChefApp.swift (앱 시작점 == main)
 │   └───ContentView.swift (첫 화면 UI)
