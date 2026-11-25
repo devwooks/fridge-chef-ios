@@ -24,6 +24,9 @@
 FridgeChef(Root)
 ├───FridgeChef (실제 코드 파일)
 │   ├───Views
+│   │   └───LoginView.swift(소셜 로그인 화면)
+│   │   └───MainView.swift(로그인 및 비로그인 후 메인 화면)
+│   │   └───WelcomeView.swift(앱 실행 후 설명 화면)
 │   ├───Stores
 │   │   └───SessionStore.swift(사용자의 로그인 상태 저장)
 │   ├───Services
