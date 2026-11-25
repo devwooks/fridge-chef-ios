@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE02514B30B6A89100FF7C9F /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FE02514A30B6A89100FF7C9F /* GoogleSignIn */; };
 		FE33C23330A4528D00454B33 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = FE33C23230A4528D00454B33 /* Supabase */; };
 		FE97EB7F309320CD008930E0 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FE97EB7E309320CD008930E0 /* README.md */; };
 /* End PBXBuildFile section */
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			files = (
 				FE33C23330A4528D00454B33 /* Supabase in Frameworks */,
+				FE02514B30B6A89100FF7C9F /* GoogleSignIn in Frameworks */,
 			);
 		};
 		FE97EB6030931FFD008930E0 /* Frameworks */ = {
@@ -128,6 +130,7 @@
 			name = FridgeChef;
 			packageProductDependencies = (
 				FE33C23230A4528D00454B33 /* Supabase */,
+				FE02514A30B6A89100FF7C9F /* GoogleSignIn */,
 			);
 			productName = FridgeChef;
 			productReference = FE97EB5630931FFD008930E0 /* FridgeChef.app */;
@@ -209,6 +212,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				FE02514930B6A89100FF7C9F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FE97EB5730931FFD008930E0 /* Products */;
@@ -588,6 +592,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FE02514930B6A89100FF7C9F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.0;
+			};
+		};
 		FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/supabase/supabase-swift";
@@ -599,6 +611,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FE02514A30B6A89100FF7C9F /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE02514930B6A89100FF7C9F /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
 		FE33C23230A4528D00454B33 /* Supabase */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FE33C23130A4528D00454B33 /* XCRemoteSwiftPackageReference "supabase-swift" */;
