@@ -28,7 +28,7 @@ final class SessionStore { // class는 참조 타입 -> 여러 화면에 전달�
     
     // MARK: - 상태 감지 (앱 시작 시 한 번 호출)
     
-    func start() async { // 비동기 함수로 작성 -> 앱이 멈추지 않도록 하기 위함, ContentView에서 1회 호출하여 앱이 실행되는 동안 동작
+    func start() async { // 비동기 함수로 작성 -> 앱이 멈추지 않도록 하기 위함, ContentView에서 1회 호출하여 앱이 실행되는 내내 동작
         
         // 1) Keychain에 저장된 로그인 정보 확인(만료됐으면 자동 갱신 시도)
         if let session = try? await supabase.auth.session { // await로 if실행 전 supabase.auth.session가 로그인 정보를 가져올 때까지 대기
