@@ -77,9 +77,25 @@ final class SessionStore { // class는 참조 타입 -> 여러 화면에 전달�
         try await supabase.auth.signInAnonymously()
         // 성공하면 authStateChanges가 .signedIn을 알려 주어 state가 바뀜
     }
+    // Google 로그인: Google에서 받은 ID 토큰을 Supabase에 넘겨 로그인
+    func signInWithGoogle() async throws {
+        guard let tokens = try await GoogleSignInService.signIn() else {
+            // signIn의 return 값이 Token 구조체 -> 함수의 반환 타입을 보고 변수의 타입을 결정
+            return      // 사용자가 취소 → 아무것도 하지 않음
+        }
+        try await supabase.auth.signInWithIdToken(
+            credentials: OpenIDConnectCredentials(
+                provider: .google,
+                idToken: tokens.idToken,
+                accessToken: tokens.accessToken
+            )
+        )
+        // 성공하면 authStateChanges가 .signedIn을 알려 주어 state가 바뀜
+    }
     // 로그아웃
     func signOut() async throws {
         try await supabase.auth.signOut()
+        GoogleSignInService.signOut() // Google 쪽 로그인 기록도 지움 (익명 사용자여도 문제없음)
         // 성공하면 authStateChanges가 .signedOut을 알려 주어 state가 바뀜
     }
 }
