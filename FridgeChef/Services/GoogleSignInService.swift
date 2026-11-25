@@ -5,7 +5,7 @@
 //  Created by 이성욱 on 11/25/26.
 //
 
-import UIKit        // SWiftUI 개발 전 프레임워크로 GoogleSignIn 패키지가 UIKit 기반이라 UIViewController 사용
+import UIKit        // SwiftUI 개발 전 프레임워크로 GoogleSignIn 패키지가 UIKit 기반이라 UIViewController 사용
 import GoogleSignIn
 
 // Google 로그인 담당: Google 로그인 화면을 띄우고 ID 토큰을 받아 옴
@@ -62,6 +62,11 @@ enum GoogleSignInService {  // 객체 생성 없는 함수 모음
         GIDSignIn.sharedInstance.signOut()
     }
 
+    // 로그인 후 앱으로 돌아온 주소(URL Scheme)를 GoogleSignIn에 전달
+    static func handle(_ url: URL) {
+        _ = GIDSignIn.sharedInstance.handle(url)
+    }
+    
     // 지금 화면 맨 위에 떠 있는 UIViewController 찾기 (Google 로그인 화면을 그 위에 띄우기 위함)
     private static func topViewController() -> UIViewController? {
         let scene = UIApplication.shared.connectedScenes

@@ -18,6 +18,9 @@ struct FridgeChefApp: App {                     // 앱이라는 구조체로 정
                 .environment(session)           // 모든 하위 화면에 객체 전달 , ContentView가 루트인 트리구조로 생각하면 편함
                                                 // MainView나 WelcomeView가 ContentView 안에 포함되어 있어 session 정보를 꺼낼 수 있음
                                                 // 상속개념과 비슷하지만 다른 것, @Environment로 사용
+                .onOpenURL { url in             // 앱이 URL Scheme 주소로 열렸을 때 실행
+                    GoogleSignInService.handle(url)
+                }
         }
     }
 }

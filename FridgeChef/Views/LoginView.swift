@@ -38,7 +38,7 @@ struct LoginView: View {
                          title: "Google로 계속하기",
                          background: Color(.systemGray6),
                          foreground: .primary) {
-                showMessage("Google 로그인은 준비 중이에요")
+                Task { await googleLogin() }
             }
             SignInButton(icon: "message.fill",
                          title: "카카오로 계속하기",
@@ -65,6 +65,7 @@ struct LoginView: View {
             Spacer()
         }
         .padding() // 좌우 공백
+        .disabled(isLoading)                    // 로그인 진행 중에는 화면의 모든 버튼 비활성화 (중복 실행 방지)
         .alert("알림", isPresented: $showAlert) { // $showAlert 값을 보고 알림을 띄움
             Button("확인", role: .cancel) { }     // role과 cancel을 통해 닫기 버튼임을 명시
         } message: {
@@ -86,6 +87,18 @@ struct LoginView: View {
             try await session.signInAnonymouslyForTesting()
         } catch {
             showMessage("익명 로그인 실패: \(error.localizedDescription)")
+        }
+    }
+    // Google 로그인 실행
+    private func googleLogin() async {
+        isLoading = true
+        defer { isLoading = false }
+        do {
+            try await session.signInWithGoogle()
+            // 성공: SessionStore 상태가 바뀌어 ContentView가 메인 화면으로 전환
+            // 취소: signInWithGoogle()이 그냥 return → 아무 일 없음
+        } catch {
+            showMessage("Google 로그인 실패: \(error.localizedDescription)")
         }
     }
 }
