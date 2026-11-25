@@ -20,14 +20,14 @@ struct MainView: View {
                 // 메뉴
                 Section {
                     NavigationLink {
-                        Text("재료 관리 (E-5단계에서 FridgeView로 교체)")       // 임시
+                        FridgeView()
                     } label: {
                         Label("재료 관리", systemImage: "refrigerator")
                     }
                     .disabled(!session.canUsePersonalData)                     // 로그인 전에는 비활성
                     
                     NavigationLink {
-                        Text("레시피 검색 (E-5단계에서 RecipeSearchView로 교체)") // 임시
+                        RecipeSearchView()
                     } label: {
                         Label("레시피 검색", systemImage: "magnifyingglass")
                     }
